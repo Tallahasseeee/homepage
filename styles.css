@@ -20,7 +20,11 @@ body {
     margin: 0 auto;
     padding: 0 30px;
     max-width: 900px;
+    flex-direction: row;
+
 }
+
+
 
 .fh {
     display: flex;
@@ -46,13 +50,15 @@ body {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
     margin-bottom: 15px;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 576px) {
 
     .main-info,
     .contact_info_container {
-        flex-direction: column;
+        flex-direction: row;
+        display: inline-block 
     }
 
     .contact_info_container {
@@ -65,6 +71,8 @@ body {
 
     .experiences {
         margin-right: 0;
+        flex-direction: row;
+        display: inline-block 
     }
 }
 
@@ -173,7 +181,9 @@ body {
 
 .experiences {
     flex: 1 1 60%;
-    margin-right: 50px;
+    margin-right: 50px; 
+    flex-direction: row;
+    display: inline-block 
 }
 
 .experiences__header {
@@ -222,10 +232,14 @@ body {
 
 .additional-info {
     flex: 1 1 40%;
+    float: right;
+    flex-direction: column;
+    display: inline-block 
 }
 
 .additional-info__education {
     margin-bottom: 20px;
+    flex-direction: row;
 }
 
 .additional-info__education-header {
@@ -264,3 +278,4 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
